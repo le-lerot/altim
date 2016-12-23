@@ -24,9 +24,12 @@ class DeviceStatusViewController: UIViewController {
         // init MotionManager
         motionManager.deviceMotionUpdateInterval = 0.1
         motionManager.startDeviceMotionUpdates(to: OperationQueue.main) { (deviceMotion, error) in
-            self.yaw.text = String(format: "%f%", (deviceMotion?.attitude.yaw)!)
-            self.pitch.text = String(format: "%f%", (deviceMotion?.attitude.pitch)!)
-            self.roll.text = String(format: "%f%", (deviceMotion?.attitude.roll)!)
+            let yawDeg:Double = (deviceMotion?.attitude.yaw)! * 180 / .pi
+            self.yaw.text = String(format: "%.2f%", yawDeg) + "°"
+            let pitchDeg:Double = (deviceMotion?.attitude.pitch)! * 180 / .pi
+            self.pitch.text = String(format: "%.2f%", pitchDeg) + "°"
+            let rollDeg:Double = (deviceMotion?.attitude.roll)! * 180 / .pi
+            self.roll.text = String(format: "%.2f%", rollDeg) + "°"
         }
     }
 
