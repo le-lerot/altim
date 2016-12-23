@@ -107,6 +107,11 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Device Status" image="first" id="acW-dT-cKf" userLabel="DeviceStatus"/>
+                    <connections>
+                        <outlet property="pitch" destination="vr0-O6-z8f" id="xXM-xr-LLj"/>
+                        <outlet property="roll" destination="4gx-vr-0VB" id="k2n-ef-wyl"/>
+                        <outlet property="yaw" destination="CiO-tF-2tu" id="yWA-8w-sXb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
