@@ -29,13 +29,26 @@ class CameraViewController: UIViewController {
             // Create video preview layer and add it to the UI
             if let newCaptureVideoPreviewLayer = AVCaptureVideoPreviewLayer(session: session) {
                 let viewLayer = self.cameraView.layer
-                newCaptureVideoPreviewLayer.frame = self.cameraView.bounds;
+                let size = self.cameraView.bounds
+                newCaptureVideoPreviewLayer.frame = size;
 
                 viewLayer.addSublayer(newCaptureVideoPreviewLayer)
 
                 self.cameraPreviewLayer = newCaptureVideoPreviewLayer;
 
                 session.startRunning()
+
+                let textLayer = CATextLayer()
+                textLayer.string = "coucou"
+                textLayer.frame = CGRect(x: 0, y: 20, width: size.width, height: 40)
+
+                viewLayer.addSublayer(textLayer)
+
+                let rectLayer = CALayer()
+                rectLayer.backgroundColor = UIColor.red.cgColor
+                rectLayer.frame = CGRect(x: size.width / 2 - 20, y: 0, width: 40, height: size.height)
+
+                viewLayer.addSublayer(rectLayer)
             }
         } catch {
             print(error)
