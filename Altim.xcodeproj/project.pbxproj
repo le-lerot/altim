@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5B25FD1C1E0D5D6900E66113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25FD1B1E0D5D6900E66113 /* AppDelegate.swift */; };
-		5B25FD1E1E0D5D6900E66113 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25FD1D1E0D5D6900E66113 /* FirstViewController.swift */; };
+		5B25FD1E1E0D5D6900E66113 /* DeviceStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25FD1D1E0D5D6900E66113 /* DeviceStatusViewController.swift */; };
 		5B25FD201E0D5D6900E66113 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25FD1F1E0D5D6900E66113 /* SecondViewController.swift */; };
 		5B25FD231E0D5D6900E66113 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B25FD211E0D5D6900E66113 /* Main.storyboard */; };
 		5B25FD251E0D5D6900E66113 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B25FD241E0D5D6900E66113 /* Assets.xcassets */; };
@@ -37,7 +37,7 @@
 /* Begin PBXFileReference section */
 		5B25FD181E0D5D6900E66113 /* Altim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Altim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B25FD1B1E0D5D6900E66113 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5B25FD1D1E0D5D6900E66113 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		5B25FD1D1E0D5D6900E66113 /* DeviceStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceStatusViewController.swift; sourceTree = "<group>"; };
 		5B25FD1F1E0D5D6900E66113 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		5B25FD221E0D5D6900E66113 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B25FD241E0D5D6900E66113 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				5B25FD1B1E0D5D6900E66113 /* AppDelegate.swift */,
-				5B25FD1D1E0D5D6900E66113 /* FirstViewController.swift */,
+				5B25FD1D1E0D5D6900E66113 /* DeviceStatusViewController.swift */,
 				5B25FD1F1E0D5D6900E66113 /* SecondViewController.swift */,
 				5B25FD211E0D5D6900E66113 /* Main.storyboard */,
 				5B25FD241E0D5D6900E66113 /* Assets.xcassets */,
@@ -267,7 +267,7 @@
 			files = (
 				5B25FD201E0D5D6900E66113 /* SecondViewController.swift in Sources */,
 				5B25FD1C1E0D5D6900E66113 /* AppDelegate.swift in Sources */,
-				5B25FD1E1E0D5D6900E66113 /* FirstViewController.swift in Sources */,
+				5B25FD1E1E0D5D6900E66113 /* DeviceStatusViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

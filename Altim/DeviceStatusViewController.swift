@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  DeviceStatusViewController.swift
 //  Altim
 //
 //  Created by Martin Delille on 23/12/2016.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class DeviceStatusViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
