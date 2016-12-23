@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B1D1CE51E0DB8C5009D0484 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1D1CE41E0DB8C5009D0484 /* CameraViewController.swift */; };
+		5B1D1CE81E0DE132009D0484 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1D1CE71E0DE132009D0484 /* AVFoundation.framework */; };
 		5B25FD1C1E0D5D6900E66113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25FD1B1E0D5D6900E66113 /* AppDelegate.swift */; };
 		5B25FD1E1E0D5D6900E66113 /* DeviceStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25FD1D1E0D5D6900E66113 /* DeviceStatusViewController.swift */; };
 		5B25FD201E0D5D6900E66113 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B25FD1F1E0D5D6900E66113 /* MapViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B1D1CE41E0DB8C5009D0484 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		5B1D1CE71E0DE132009D0484 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		5B25FD181E0D5D6900E66113 /* Altim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Altim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B25FD1B1E0D5D6900E66113 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B25FD1D1E0D5D6900E66113 /* DeviceStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceStatusViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B1D1CE81E0DE132009D0484 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B1D1CE61E0DE132009D0484 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B1D1CE71E0DE132009D0484 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5B25FD0F1E0D5D6900E66113 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +96,7 @@
 				5B25FD311E0D5D6900E66113 /* AltimTests */,
 				5B25FD3C1E0D5D6900E66113 /* AltimUITests */,
 				5B25FD191E0D5D6900E66113 /* Products */,
+				5B1D1CE61E0DE132009D0484 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +117,7 @@
 				5B25FD1D1E0D5D6900E66113 /* DeviceStatusViewController.swift */,
 				5B25FD1F1E0D5D6900E66113 /* MapViewController.swift */,
 				5B25FD211E0D5D6900E66113 /* Main.storyboard */,
+				5B1D1CE41E0DB8C5009D0484 /* CameraViewController.swift */,
 				5B25FD241E0D5D6900E66113 /* Assets.xcassets */,
 				5B25FD261E0D5D6900E66113 /* LaunchScreen.storyboard */,
 				5B25FD291E0D5D6900E66113 /* Info.plist */,
@@ -266,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B25FD201E0D5D6900E66113 /* MapViewController.swift in Sources */,
+				5B1D1CE51E0DB8C5009D0484 /* CameraViewController.swift in Sources */,
 				5B25FD1C1E0D5D6900E66113 /* AppDelegate.swift in Sources */,
 				5B25FD1E1E0D5D6900E66113 /* DeviceStatusViewController.swift in Sources */,
 			);
