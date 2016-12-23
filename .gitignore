@@ -63,3 +63,10 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
+
+# Jekyll
+
+docs/_site
+docs/Gemfile.lock
+.sass-cache
+.jekyll-metadata
