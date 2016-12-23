@@ -25,6 +25,29 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         self.locationManager.startUpdatingLocation()
         self.mapView.showsUserLocation = true
         self.mapView.showsScale = true
+        
+        // Add an annotation
+        let point = MKPointAnnotation()
+        point.coordinate = CLLocationCoordinate2D(latitude: 45.69, longitude: 6.55)
+        point.title = "Where am I?";
+        point.subtitle = "I'm here!!!";
+        
+        self.mapView.addAnnotation(point)
+        
+        // register the Long Press Gesture Recognizer to the map
+        let uilgr = UILongPressGestureRecognizer(target: self, action: #selector(addAnnotationToMap))
+        uilgr.minimumPressDuration = 1.0
+        self.mapView.addGestureRecognizer(uilgr)
+    }
+    
+    func addAnnotationToMap(gestureRecognizer:UIGestureRecognizer) {
+        if gestureRecognizer.state == UIGestureRecognizerState.began {
+            let touchPoint = gestureRecognizer.location(in: mapView)
+            let newCoordinates = mapView.convert(touchPoint, toCoordinateFrom: mapView)
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = newCoordinates
+            mapView.addAnnotation(annotation)
+        }
     }
 
     override func didReceiveMemoryWarning() {
