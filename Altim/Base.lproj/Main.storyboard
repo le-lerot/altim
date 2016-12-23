@@ -96,7 +96,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xz0-yL-Zja">
-                                <rect key="frame" x="16" y="241" width="343" height="21"/>
+                                <rect key="frame" x="16" y="240.5" width="343" height="20.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latitude:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGK-Dz-1WF">
                                         <rect key="frame" x="0.0" y="0.0" width="271" height="20.5"/>
@@ -116,7 +116,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nAr-81-VAo">
-                                <rect key="frame" x="16" y="270" width="343" height="22"/>
+                                <rect key="frame" x="16" y="269" width="343" height="21.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longitude:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPS-Pr-brc">
                                         <rect key="frame" x="0.0" y="0.0" width="271" height="21.5"/>
@@ -136,7 +136,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X19-uI-hph">
-                                <rect key="frame" x="16" y="299" width="343" height="21"/>
+                                <rect key="frame" x="16" y="298.5" width="343" height="20.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Altitude:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTT-Zr-Xtz">
                                         <rect key="frame" x="0.0" y="0.0" width="271" height="20.5"/>
@@ -144,7 +144,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00.00°" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLk-hA-KCE">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4807m" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLk-hA-KCE">
                                         <rect key="frame" x="271" y="0.0" width="72" height="20.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="72" id="Pop-3D-TV8"/>
@@ -156,7 +156,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Position" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rf7-J7-y81">
-                                <rect key="frame" x="16" y="206" width="343" height="27"/>
+                                <rect key="frame" x="16" y="206" width="343" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -197,6 +197,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Device Status" image="first" id="acW-dT-cKf" userLabel="DeviceStatus"/>
                     <connections>
+                        <outlet property="altitude" destination="oLk-hA-KCE" id="6wh-lX-YJS"/>
+                        <outlet property="latitude" destination="DoR-LW-XdD" id="WOR-6d-iSB"/>
+                        <outlet property="longitude" destination="nnO-kV-4un" id="5AS-CX-Pc9"/>
                         <outlet property="pitch" destination="vr0-O6-z8f" id="xXM-xr-LLj"/>
                         <outlet property="roll" destination="4gx-vr-0VB" id="k2n-ef-wyl"/>
                         <outlet property="yaw" destination="CiO-tF-2tu" id="yWA-8w-sXb"/>
