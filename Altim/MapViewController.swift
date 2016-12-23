@@ -24,6 +24,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         self.locationManager.requestAlwaysAuthorization()
         self.locationManager.startUpdatingLocation()
         self.mapView.showsUserLocation = true
+        self.mapView.showsScale = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,7 +46,10 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print(error)
     }
-
+    
+    @IBAction func centerMap(_ sender: Any) {
+        self.mapView.setUserTrackingMode( MKUserTrackingMode.follow, animated: true)
+    }
 
 }
 

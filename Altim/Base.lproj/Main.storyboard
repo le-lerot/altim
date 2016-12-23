@@ -221,26 +221,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Map View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="16" y="20" width="343" height="42"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dvy-zf-DgG">
-                                <rect key="frame" x="16" y="70" width="343" height="540"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dvy-zf-DgG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="610"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCW-cf-EUB">
+                                <rect key="frame" x="307" y="550" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="52" id="SyZ-fW-Ktr"/>
+                                    <constraint firstAttribute="height" constant="52" id="ess-kt-xht"/>
+                                    <constraint firstAttribute="width" constant="52" id="vjA-uH-wl9"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="52" id="wdo-K1-czw"/>
+                                </constraints>
+                                <state key="normal" image="position"/>
+                                <connections>
+                                    <action selector="centerMap:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="t0c-Wy-s0f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="dvy-zf-DgG" firstAttribute="trailing" secondItem="zEq-FU-wV5" secondAttribute="trailing" id="E6w-90-LyI"/>
-                            <constraint firstItem="zEq-FU-wV5" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="OUR-d5-5wf"/>
-                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="dvy-zf-DgG" secondAttribute="bottom" constant="8" symbolic="YES" id="Wld-hA-sxQ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="zEq-FU-wV5" secondAttribute="trailing" id="Xsk-no-90K"/>
-                            <constraint firstItem="dvy-zf-DgG" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="ZdQ-Oy-78P"/>
-                            <constraint firstItem="dvy-zf-DgG" firstAttribute="leading" secondItem="zEq-FU-wV5" secondAttribute="leading" id="Zh4-qa-mqS"/>
-                            <constraint firstItem="zEq-FU-wV5" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="pTQ-49-BoM"/>
+                            <constraint firstItem="uCW-cf-EUB" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="46u-wQ-GfA"/>
+                            <constraint firstItem="dvy-zf-DgG" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="5xh-bk-Aym"/>
+                            <constraint firstAttribute="trailing" secondItem="dvy-zf-DgG" secondAttribute="trailing" id="7gA-nH-m1k"/>
+                            <constraint firstItem="uCW-cf-EUB" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="AI2-vb-70U"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="uCW-cf-EUB" secondAttribute="bottom" constant="16" id="Wpz-mi-dyq"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="dvy-zf-DgG" secondAttribute="bottom" constant="8" symbolic="YES" id="ZbE-wA-6iU"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="uCW-cf-EUB" secondAttribute="bottom" constant="16" id="gZd-MP-NXT"/>
+                            <constraint firstItem="dvy-zf-DgG" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="tKw-vO-4hn"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="second" id="cPa-gy-q4n" userLabel="Map"/>
@@ -295,6 +302,7 @@
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
+        <image name="position" width="512" height="512"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>
