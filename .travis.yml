@@ -4,3 +4,7 @@ xcode_project: Altim.xcodeproj
 xcode_scheme: Altim
 xcode_sdk: iphonesimulator
 osx_image: xcode8
+notification:
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/8be8528f622806690eea
