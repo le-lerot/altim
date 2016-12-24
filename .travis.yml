@@ -4,7 +4,7 @@ xcode_project: Altim.xcodeproj
 xcode_scheme: Altim
 xcode_sdk: iphonesimulator
 osx_image: xcode8.2
-script: xcodebuild
+script: xcodebuild -sdk $TRAVIS_XCODE_SDK
 notification:
   webhooks:
     urls:
