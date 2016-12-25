@@ -4,8 +4,8 @@
 <dict>
 	<key>NSCameraUsageDescription</key>
 	<string>TODO</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string></string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>TODO</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
