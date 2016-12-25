@@ -8,10 +8,14 @@
 
 import UIKit
 import AVFoundation
+import CoreMotion
 
 class CameraViewController: UIViewController {
 
     var cameraPreviewLayer: AVCaptureVideoPreviewLayer?
+    var hudLayer = CAShapeLayer()
+
+    var motionManager = CMMotionManager()
 
     @IBOutlet weak var cameraView: UIImageView!
 
@@ -44,14 +48,22 @@ class CameraViewController: UIViewController {
 
                 viewLayer.addSublayer(textLayer)
 
-                let rectLayer = CALayer()
-                rectLayer.backgroundColor = UIColor.red.cgColor
-                rectLayer.frame = CGRect(x: size.width / 2 - 20, y: 0, width: 40, height: size.height)
+                hudLayer.backgroundColor = UIColor.red.cgColor
+                hudLayer.frame = CGRect(x: size.width / 2 - 20, y: 0, width: 40, height: size.height)
 
-                viewLayer.addSublayer(rectLayer)
+                viewLayer.addSublayer(hudLayer)
             }
         } catch {
             print(error)
+        }
+
+        motionManager.deviceMotionUpdateInterval = 0.1
+        motionManager.startDeviceMotionUpdates(to: OperationQueue.main) { (deviceMotion, error) in
+            if let yaw = deviceMotion?.attitude.yaw {
+                let size = self.cameraView.bounds
+                let x = CGFloat(yaw) * size.width
+                self.hudLayer.frame = CGRect(x: x, y: 0, width: 10, height: size.height)
+            }
         }
     }
 
