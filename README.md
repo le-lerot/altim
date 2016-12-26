@@ -5,3 +5,7 @@
 Geolocate your favorites places!
 
 Point at your favorite location using your smartphone. Places will be hardcoded in the first version, but pull requests are accepted ;-)
+
+## Travis
+
+Much help here: [https://github.com/radex/SwiftyUserDefaults/blob/master/.travis.yml]()
