@@ -1,3 +1,16 @@
+os: osx
 language: objective-c
+rvm: 2.2.2
 xcode_project: Altim.xcodeproj
 xcode_scheme: Altim
+xcode_sdk: iphonesimulator
+osx_image: xcode8.2
+before_install: gem install xcpretty
+script:
+  - set -o pipefail
+  - xcodebuild -project Altim.xcodeproj -scheme Altim -sdk $TRAVIS_XCODE_SDK -destination 'name=iPhone 6,OS=10.0' ONLY_ACTIVE_ARCH=NO CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO test | xcpretty
+notification:
+  email: false
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/8be8528f622806690eea

@@ -37,9 +37,6 @@ class DeviceStatusViewController: UIViewController, CLLocationManagerDelegate {
             self.roll.text = String(format: "%.2f%", rollDeg) + "°"
         }
         
-        // Ask for Authorisation from the User.
-        self.locationManager.requestAlwaysAuthorization()
-        
         // For use in foreground
         self.locationManager.requestWhenInUseAuthorization()
         

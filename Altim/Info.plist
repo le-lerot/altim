@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>NSCameraUsageDescription</key>
-	<string>TODO</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string></string>
+	<string>Needed for augmented reality</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Needed to know where are the place nearby</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
