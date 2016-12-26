@@ -4,7 +4,7 @@ xcode_project: Altim.xcodeproj
 xcode_scheme: Altim
 xcode_sdk: iphonesimulator
 osx_image: xcode8.2
-script: xcodebuild -sdk $TRAVIS_XCODE_SDK
+script: xcodebuild -project Altim.xcodeproj -scheme Altim -sdk $TRAVIS_XCODE_SDK -destination 'name=iPhone 6,OS=10.0' ONLY_ACTIVE_ARCH=NO CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO test
 notification:
   webhooks:
     urls:
