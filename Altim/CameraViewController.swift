@@ -48,7 +48,7 @@ class CameraViewController: UIViewController {
 
                 viewLayer.addSublayer(textLayer)
 
-                hudLayer.backgrodundColor = UIColor.red.cgColor
+                hudLayer.backgroundColor = UIColor.red.cgColor
                 hudLayer.frame = CGRect(x: size.width / 2 - 20, y: 0, width: 40, height: size.height)
 
                 viewLayer.addSublayer(hudLayer)
