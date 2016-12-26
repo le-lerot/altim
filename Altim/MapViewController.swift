@@ -15,6 +15,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     @IBOutlet weak var mapView: MKMapView!
     
     let locationManager = CLLocationManager()
+    var wayPointId = 0;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +47,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
             let newCoordinates = mapView.convert(touchPoint, toCoordinateFrom: mapView)
             let annotation = MKPointAnnotation()
             annotation.coordinate = newCoordinates
+            annotation.title = "Waypoint" + String(format:"%i%", wayPointId)
+            wayPointId += 1
             mapView.addAnnotation(annotation)
         }
     }
